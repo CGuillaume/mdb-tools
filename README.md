@@ -1,2 +1,2 @@
-# mdb_tools
-Utilisation de mdb-tool : Import mdb vers postgres
+# Utilisation de l'outils mdb-tool
+Import d'une base de données access mdb vers postgres.
