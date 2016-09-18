@@ -25,3 +25,10 @@ A noter que la base de réception doit être en UTF-8 pour éviter les problème
 
 	mdb-export -q "'" -R ";\n" -I 'postgres' ma_base.mdb nom_table | psql -d nom_bd_pg -U odk_user -W -h localhost
 	mdb-export -q "'" -R ";\n" -I 'postgres' CETUS_FICHOBS_Modif.mdb AUTRE_ESPECE | psql -d access -U odk_user -W -h localhost
+
+#### Utilisation du script 'mdbconvert.sh'
+
+	chmod 755 mdbconvert.sh  
+	  
+	./mdbconvert.sh ma_base.mdb nom_bd_pg
+	./mdbconvert.sh CETUS_FICHOBS_Modif.mdb access
