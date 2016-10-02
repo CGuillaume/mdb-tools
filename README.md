@@ -26,6 +26,8 @@ A noter que la base de réception doit être en UTF-8 pour éviter les problème
 	mdb-export -q "'" -R ";\n" -I 'postgres' ma_base.mdb nom_table | psql -d nom_bd_pg -U odk_user -W -h localhost
 	mdb-export -q "'" -R ";\n" -I 'postgres' CETUS_FICHOBS_Modif.mdb AUTRE_ESPECE | psql -d access -U odk_user -W -h localhost
 
+> Les colonnes en boolean pausent des problèmes il faut les recréer en integer avant de faire les imports
+	
 #### Utilisation du script 'mdbconvert.sh'
 
 	chmod 755 mdbconvert.sh  
